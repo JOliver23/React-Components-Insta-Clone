@@ -9,7 +9,6 @@ import dummyData from '../../dummy-data';
 const PostsPage = (props) => {
   // set up state for your data
   const [feedData, setFeed] = useState(dummyData);
-  console.log(feedData)
   
   return (
     <div className="posts-container-wrapper">
