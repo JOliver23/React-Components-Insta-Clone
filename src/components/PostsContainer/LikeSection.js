@@ -8,7 +8,7 @@ import React, {useState } from "react";
 
 const LikeSection = props => {
   const [likes, newLike] = useState(props)
-  console.log('likes', likes)
+  console.log('likes', props)
 
   return (
     <div>
@@ -23,7 +23,9 @@ const LikeSection = props => {
         <i className="far fa-comment" />
       </div>
     </div>
-    <p className="like-number">{likes.likes} likes</p>
+    <p className="like-number">
+      {likes.likes} likes
+      </p>
 </div>
   )
 };
